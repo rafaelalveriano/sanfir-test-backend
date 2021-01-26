@@ -15,11 +15,11 @@ const CustomerSchema = new Schema({
         type: String,
         required: true,
     },
-    city: {
+    uf: {
         type: String,
         required: true,
     },
-    uf: {
+    city: {
         type: String,
         required: true,
     },
