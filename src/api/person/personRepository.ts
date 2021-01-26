@@ -1,4 +1,4 @@
-import { PersonType } from './person_type'
+import { PersonType } from './personType'
 import PersonModel from '../../models/person'
 
 export const listPerson = async () =>

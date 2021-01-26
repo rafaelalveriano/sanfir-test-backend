@@ -1,1 +1,1 @@
-export { default as PersonRoute } from './person_route'
+export { default as PersonRoute } from './personRoute'

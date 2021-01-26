@@ -1,1 +1,1 @@
-export { default } from './schema_validator'
+export { default } from './schemaValidator'
