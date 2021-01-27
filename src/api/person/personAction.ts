@@ -31,9 +31,9 @@ export const update = async (req: Request, res: Response) => {
 }
 
 export const remove = async (req: Request, res: Response) => {
-    const { id } = req.params
+    const ids = req.body
 
-    const person = await removePerson(id)
+    const person = await removePerson(ids)
     if (!person) return Error(res).error500('Error ao remover o registro')
     res.status(200).send()
 }

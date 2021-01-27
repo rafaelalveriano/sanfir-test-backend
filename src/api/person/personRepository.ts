@@ -20,9 +20,9 @@ export const updatePerson = async (data: PersonType, id: string) => {
     }
 }
 
-export const removePerson = async (id: string) => {
+export const removePerson = async (ids: []) => {
     try {
-        return await PersonModel.deleteOne({ _id: id })
+        return await PersonModel.deleteMany({ _id: ids })
     } catch (error) {
         return false
     }
