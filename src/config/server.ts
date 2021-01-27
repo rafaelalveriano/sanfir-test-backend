@@ -1,12 +1,14 @@
 import express, { Request, Response, Router } from 'express'
 import bodyParser from 'body-parser'
+import cors from 'cors'
 import registerRouter from './registerRouter'
 
 const Server = () => {
     const app = express()
+    app.use(cors())
     app.use(bodyParser.json())
 
-    const port = process.env.PORT || 3000
+    const port = process.env.PORT || 3001
 
     registerRouter(app, Router())
 
