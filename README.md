@@ -46,4 +46,4 @@ $ yarn dev
 
 ### ==Demo Live==
 
-### [Visualizar](https://quirky-goldberg-2a978c.netlify.app/)
+### [Visualizar](https://sanfir.herokuapp.com/api/person)
